@@ -66,7 +66,6 @@ Answer:"""
     })
     return response.json()["response"].strip()
 
-# --- UI Controls ---
 model_choice = st.selectbox("Choose Model", ["openai", "mistral"])
 query = st.text_input("Ask your question about the PDFs:")
 
