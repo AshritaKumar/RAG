@@ -51,7 +51,7 @@ Answer:"""
     )
     return response.json()["response"].strip()
 
-# Main logic
+
 if query:
     with st.spinner(" Processing PDFs from 'data/' and searching..."):
         all_chunks = []
