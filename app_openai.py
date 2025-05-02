@@ -78,7 +78,7 @@ Answer:"""
 
 
 st.set_page_config(page_title="RAG with OpenAI", layout="centered")
-st.title("nRAG with OpenAI + ChromaDB")
+st.title("RAG with OpenAI + ChromaDB")
 
 query = st.text_input("Enter your query:")
 
