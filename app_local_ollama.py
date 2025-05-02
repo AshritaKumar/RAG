@@ -10,7 +10,7 @@ from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunct
 
 
 st.set_page_config(page_title="Local RAG - Mistral Q4 via Ollama", layout="centered")
-st.title("📄 Local RAG with Mistral Q4 via Ollama")
+st.title(" Local RAG with Mistral Q4 via Ollama")
 
 
 EMBEDDING_MODEL_NAME = "all-MiniLM-L12-v2"
@@ -35,9 +35,9 @@ def get_pdf_hash(filepaths):
     return m.hexdigest()
 
 def generate_answer_with_ollama(context, query):
-    prompt = f"""You are a helpful assistant. Use only the context provided below to answer the user's question.
+    prompt = f"""You are an AI assistant. Use only the context provided below to answer the user's question.
 
-If the answer is not present in the context, say "I don't know".
+If the answer is not present in the context, say "I don't know, I can't find the relevant answer".
 
 Context:
 {context}
